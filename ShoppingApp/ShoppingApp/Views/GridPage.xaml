@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShoppingApp.Views.GridPage">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0" Padding="10,5,10,10" HasShadow="False"> 
+                <StackLayout Margin="10,10,10,10">
+                    <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/06/trivandrum-tshirt-mydesignation-image-latest.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    <Label TextColor="Black" HorizontalOptions="Center" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Trivandrum " FontAttributes="Bold" FontSize="Small"/>
+                            <Span Text="Men White Slim Fit Pure Cotton T-shirt" FontSize="Small"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+                <Label Text="Price : 599/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic" />
+                <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame Grid.Row="0" Grid.Column="1" Padding="10,5,10,10" HasShadow="False">
+                <StackLayout Margin="10,10,10,10">
+                    <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/02/harry-potter-tshirt-glow-in-the-dark-mydesignation-mockup-glow.gif" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    <Label TextColor="Black" HorizontalOptions="Center" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Trivandrum " FontAttributes="Bold" FontSize="Small"/>
+                            <Span Text="Men Black Slim Fit Pure Cotton T-shirt" FontSize="Small"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+                <Label Text="Price : 799/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic" />
+                <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame Grid.Row="1" Grid.Column="0" Padding="10,5,10,10" HasShadow="False">
+                <StackLayout Margin="10,10,10,10">
+                    <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/06/but-why-tshirt-mydesignation-image-latest.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    <Label TextColor="Black" HorizontalOptions="Center" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Trivandrum " FontAttributes="Bold" FontSize="Small"/>
+                            <Span Text="Men Red Slim Fit Pure Cotton T-shirt" FontSize="Small"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+                <Label Text="Price : 799/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic" />
+                <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame Grid.Row="1" Grid.Column="1" Padding="10,5,10,10" HasShadow="False">
+                <StackLayout Margin="10,10,10,10">
+                    <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/06/gafoor-ka-dosth-tshirt-image-malayalam-movie-latest.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    <Label TextColor="Black" HorizontalOptions="Center" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Trivandrum " FontAttributes="Bold" FontSize="Small"/>
+                            <Span Text="Men Blue Slim Fit Pure Cotton T-shirt" FontSize="Small"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+                <Label Text="Price : 799/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic" />
+                <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="2" Grid.Column="0"  Padding="10,5,10,10" HasShadow="False">
+                <StackLayout Margin="10,10,10,10">
+                    <Image Source="https://www.mydesignation.com/wp-content/uploads/2023/01/avial-tshirt-image-500x500.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                    <Label TextColor="Black" HorizontalOptions="Center" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Trivandrum " FontAttributes="Bold" FontSize="Small"/>
+                            <Span Text="Men Blue Slim Fit Pure Cotton T-shirt" FontSize="Small"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+                <Label Text="Price : 799/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic" />
+                <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame Grid.Row="2" Grid.Column="1"  Padding="10,5,10,10" HasShadow="False">
+                <StackLayout Margin="10,10,10,10">
+                    <Image Source="https://www.mydesignation.com/wp-content/uploads/2022/04/aiyoo-tshirt-product-image--768x768.jpg        " HorizontalOptions="Center" VerticalOptions="Start"/>
+                    <Label TextColor="Black" HorizontalOptions="Center" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Trivandrum " FontAttributes="Bold" FontSize="Small"/>
+                            <Span Text="Men Blue Slim Fit Pure Cotton T-shirt" FontSize="Small"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+                <Label Text="Price : 799/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic" />
+                <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
+
