@@ -12,7 +12,7 @@
                     <DataTemplate>
                         <ScrollView>
                             <StackLayout>
-                                <Frame Margin="0" HasShadow="False" HeightRequest="205">
+                                <Frame HasShadow="False" HeightRequest="205">
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="Auto"/>
@@ -29,7 +29,6 @@
                                                 <Label Text="{Binding Description}" FontAttributes="Italic" FontSize="Small" HorizontalOptions="Center" />
                                                 <Label HorizontalTextAlignment="Center" TextColor="Black" FontSize="Medium" FontAttributes="Italic">
                                                     <Label.FormattedText>
-
                                                         <FormattedString>
                                                             <Span Text="Price : " />
                                                             <Span Text="{Binding Price}" />
@@ -37,7 +36,8 @@
                                                         </FormattedString>
                                                     </Label.FormattedText>
                                                 </Label>
-                                                <Button x:Name="ShopButton" HeightRequest="40" Text="Buy Now" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Clicked="ShopButton_Clicked" Margin="10,20"/>
+                                                <Button x:Name="ShopButton" HeightRequest="40" Text="Buy Now" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Clicked="ShopButton_Clicked"
+                                                        Margin="10,20"/>
 
                                             </StackLayout>
 
