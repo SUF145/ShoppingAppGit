@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShoppingApp.Experiment.Page3">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame HorizontalOptions="Center" Margin="30,100" VerticalOptions="Start" HeightRequest="310" WidthRequest="350" CornerRadius="15" Padding="40" BorderColor="LightGray" >
+                <StackLayout>
+                    <Label Text="Sign In" FontFamily="Cabin-Sketch" TextColor="Black" Margin="0,0,0,30" FontAttributes="Bold" FontSize="Title" HorizontalTextAlignment="Center" />
+                    <Label Text="Email Address" TextColor="Black" FontAttributes="Italic" FontSize="Medium" HorizontalOptions="Start" />
+                    <Entry Keyboard="Email" Placeholder="Enter the email address" PlaceholderColor="DimGray" />
+                    <Label Text="Password" TextColor="Black" FontSize="Medium" HorizontalOptions="Start" />
+                    <Entry Placeholder="Enter the password" IsPassword="True" MaxLength="10" PlaceholderColor="DimGray" />
+                    <Button x:Name="SignInButton" Text="Sign In" CornerRadius="20" Margin="30,30,30,20" Clicked="SignInButton_Clicked"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>
+

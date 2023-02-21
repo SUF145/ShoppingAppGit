@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShoppingApp.Experiment.Page1"
+    Title="Shop T-shirts">
+    <ContentPage.Content>
+        <RefreshView x:Name="myRefreshView" RefreshColor="Blue" Refreshing="RefreshView_Refreshing">
+
+            <CollectionView ItemsSource="{Binding TshirtList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ScrollView>
+                            <StackLayout>
+                                <Frame Margin="0" HasShadow="False" HeightRequest="205">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image Source="{Binding Url}" Grid.Row="0" Grid.Column="0"/>
+                                        <Frame Grid.Column="1" HasShadow="False" HeightRequest="100">
+                                            <StackLayout>
+                                                <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center" />
+                                                <Label Text="{Binding Description}" FontAttributes="Italic" FontSize="Small" HorizontalOptions="Center" />
+                                                <Label HorizontalTextAlignment="Center" TextColor="Black" FontSize="Medium" FontAttributes="Italic">
+                                                    <Label.FormattedText>
+
+                                                        <FormattedString>
+                                                            <Span Text="Price : " />
+                                                            <Span Text="{Binding Price}" />
+                                                            <Span Text="/-" />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <Button x:Name="ShopButton" HeightRequest="40" Text="Buy Now" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Clicked="ShopButton_Clicked" Margin="10,20"/>
+
+                                            </StackLayout>
+
+                                        </Frame>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </ScrollView>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </RefreshView>
+
+    </ContentPage.Content>
+
+</ContentPage>

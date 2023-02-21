@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShoppingApp.Experiment.Page2"
+    Title="Shop T-shirts">
+    <ContentPage.Content>
+        <RefreshView x:Name="myRefreshView" RefreshColor="Red" Refreshing="RefreshView_Refreshing">
+            <ScrollView>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame Grid.Row="0" Padding="10,5,10,10" HasShadow="False">
+                        <StackLayout Margin="10,10,10,10">
+                            <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/02/harry-potter-tshirt-glow-in-the-dark-mydesignation-mockup-glow.gif" HorizontalOptions="Center" VerticalOptions="Start"/>
+                            <Label TextColor="Black" HorizontalOptions="Center" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Delhi " FontAttributes="Bold" FontSize="Small"/>
+                                        <Span Text="Men Oversized Pure Cotton Tshirt" FontSize="Small"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+
+                            </Label>
+
+                            <Label Text="Price : 599/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic"/>
+                            <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Grid.Row="0" Grid.Column="1" Padding="10,5,10,10" HasShadow="False">
+                        <StackLayout Margin="10,10,10,10">
+                            <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/06/trivandrum-tshirt-mydesignation-image-latest.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                            <Label TextColor="Black" HorizontalOptions="Center" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Karnataka " FontAttributes="Bold" FontSize="Small"/>
+                                        <Span Text="Men Oversized Pure Cotton Tshirt" FontSize="Small"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+
+                            </Label>
+
+                            <Label Text="Price : 599/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic"/>
+                            <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Grid.Row="1" Grid.Column="0" Padding="10,5,10,10" HasShadow="False">
+                        <StackLayout Margin="10,10,10,10">
+                            <Image Source="https://www.mydesignation.com/wp-content/uploads/2021/07/adipoli-tshirt-mydesignation-glowing-image.gif" HorizontalOptions="Center" VerticalOptions="Start"/>
+                            <Label TextColor="Black" HorizontalOptions="Center" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Goa " FontAttributes="Bold" FontSize="Small"/>
+                                        <Span Text="Men Oversized Pure Cotton Tshirt" FontSize="Small"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+
+                            </Label>
+
+                            <Label Text="Price : 599/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic"/>
+                            <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Grid.Row="1" Grid.Column="1" Padding="10,5,10,10" HasShadow="False">
+                        <StackLayout Margin="10,10,10,10">
+                            <Image Source="https://www.mydesignation.com/wp-content/uploads/2022/12/naatil-evideya-tshirt-mockup-image-.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                            <Label TextColor="Black" HorizontalOptions="Center" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Tamil Nadu " FontAttributes="Bold" FontSize="Small"/>
+                                        <Span Text="Men Oversized Pure Cotton Tshirt" FontSize="Small"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+
+                            </Label>
+
+                            <Label Text="Price : 599/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic"/>
+                            <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Grid.Row="2" Grid.Column="0" Padding="10,5,10,10" HasShadow="False">
+                        <StackLayout Margin="10,10,10,10">
+                            <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/08/malayali-tshirt-mydesignation-mockup-image-latest-golden-.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                            <Label TextColor="Black" HorizontalOptions="Center" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Kerela " FontAttributes="Bold" FontSize="Small"/>
+                                        <Span Text="Men Oversized Pure Cotton Tshirt" FontSize="Small"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+
+                            </Label>
+
+                            <Label Text="Price : 599/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic"/>
+                            <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Grid.Row="2" Grid.Column="1" Padding="10,5,10,10" HasShadow="False">
+                        <StackLayout Margin="10,10,10,10">
+                            <Image Source="https://www.mydesignation.com/wp-content/uploads/2022/01/minnal-murali-tshirt-saniya-iyappan-maroon-mydesignation-latest.jpg" HorizontalOptions="Center" VerticalOptions="Start"/>
+                            <Label TextColor="Black" HorizontalOptions="Center" >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Punjab " FontAttributes="Bold" FontSize="Small"/>
+                                        <Span Text="Men Oversized Pure Cotton Tshirt" FontSize="Small"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+
+                            </Label>
+
+                            <Label Text="Price : 599/-" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Small" FontAttributes="Italic"/>
+                            <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" Margin="10,20,10,10"/>
+                        </StackLayout>
+                    </Frame>
+
+                </Grid>
+
+            </ScrollView>
+
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

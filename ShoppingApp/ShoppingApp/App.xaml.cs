@@ -14,7 +14,7 @@ namespace ShoppingApp
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new ExpShell();
         }
 
         protected override void OnStart ()

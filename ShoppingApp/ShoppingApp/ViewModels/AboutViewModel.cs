@@ -9,7 +9,7 @@ namespace ShoppingApp.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "Shop";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 

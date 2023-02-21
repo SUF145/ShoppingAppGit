@@ -16,65 +16,51 @@
     </ContentPage.Resources>
 
 
-            <ScrollView>
+    <CollectionView x:Name="TshirtCollecion">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+
+                <ScrollView>
+
             <StackLayout BackgroundColor="White">
 
-                <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/02/harry-potter-tshirt-glow-in-the-dark-mydesignation-mockup-glow.gif" HorizontalOptions="Center" Margin="20,20,20,10" />
+                <Image Source="{Binding Url}" HorizontalOptions="Center" Margin="20,20,20,10" />
                 <Label TextColor="Black" HorizontalOptions="Center" Margin="10" FontSize="22">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Trivandrum" FontAttributes="Bold" FontSize="22"/>
-                            <Span Text="Men Black Oversized Pure Cotton T-shirt" FontSize="18"/>
+                            <Span Text="{Binding Name}" FontAttributes="Bold" FontSize="22"/>
+                            <Span Text="{Binding Description}" FontSize="18"/>
                         </FormattedString>
 
                     </Label.FormattedText>
 
                 </Label>
-                <Label Text="Price : 999/-" HorizontalTextAlignment="Start" Margin="10,0,0,0" TextColor="Black" FontSize="18" FontAttributes="Italic" />
-                <Frame HasShadow="False" Padding="100,20,100,10">
-                    <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" />
-
-                </Frame>
-
-
-                <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/02/harry-potter-tshirt-glow-in-the-dark-mydesignation-mockup-glow.gif" HorizontalOptions="Center" Margin="20,20,20,10" />
-                <Label TextColor="Black" HorizontalOptions="Center" Margin="10" FontSize="22">
+                
+                <Label HorizontalTextAlignment="Center" Margin="10,0,0,0" TextColor="Black" FontSize="18" FontAttributes="Italic">
                     <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Trivandrum" FontAttributes="Bold" FontSize="22"/>
-                            <Span Text="Men Black Oversized Pure Cotton T-shirt" FontSize="18"/>
-                        </FormattedString>
+
+                      <FormattedString>
+                            <Span Text="Price : " />
+                            <Span Text="{Binding Price}" />
+                            <Span Text="/-" />
+                      </FormattedString>
 
                     </Label.FormattedText>
 
                 </Label>
-                <Label Text="Price : 999/-" HorizontalTextAlignment="Start" Margin="10,0,0,0" TextColor="Black" FontSize="18" FontAttributes="Italic" />
-                <Frame HasShadow="False" Padding="100,20,100,10">
-                    <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" />
 
-                </Frame>
-
-
-                <Image Source="https://www.mydesignation.com/wp-content/uploads/2019/06/but-why-tshirt-mydesignation-image-latest.jpg" HorizontalOptions="Center" Margin="20,20,20,10" />
-                <Label TextColor="Black" HorizontalOptions="Center" Margin="10" FontSize="22">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Trivandrum" FontAttributes="Bold" FontSize="22" />
-                            <Span Text=" "/>
-                            <Span Text="Women Maroon Slim Fit Pure Cotton T-shirt" FontSize="18"/>
-                        </FormattedString>
-
-                    </Label.FormattedText>
-
-                </Label>
-                <Label Text="Price : 599/-" HorizontalTextAlignment="Start" Margin="10,0,0,0" TextColor="Black" FontSize="18" FontAttributes="Italic" />
                 <Frame HasShadow="False" Padding="100,20,100,10">
                     <Button Text="Buy Now" WidthRequest="70" CornerRadius="20" VerticalOptions="Center" BackgroundColor="#2196F3" />
 
                 </Frame>
 
             </StackLayout>
-
         </ScrollView>
+
+            </DataTemplate>
+
+        </CollectionView.ItemTemplate>
+
+    </CollectionView>
 
 </ContentPage>

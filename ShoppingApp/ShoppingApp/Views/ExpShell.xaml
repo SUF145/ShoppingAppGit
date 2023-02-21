@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShoppingApp.Views.ExpShell"
+    xmlns:menu="clr-namespace:ShoppingApp.Experiment">
+
+    <FlyoutItem Title="Shop" Icon="icons8-shopify-24.png">
+        <Tab Title="Stack">
+            <ShellContent ContentTemplate="{DataTemplate menu:Page1}" />
+        </Tab>
+        <Tab Title="Grid">
+            <ShellContent ContentTemplate="{DataTemplate menu:Page2}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sign In" Icon="icons8-sign-in-32.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate menu:Page3}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
